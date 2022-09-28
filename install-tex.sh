@@ -1,0 +1,1 @@
+sudo apt install texlive-base texlive-bibtex-extra texlive-binaries texlive-extra-utils texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-formats-extra texlive-humanities  texlive-lang-japanese texlive-latex-base texlive-latex-extra  texlive-latex-recommended latexmk
