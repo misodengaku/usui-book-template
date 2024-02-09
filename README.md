@@ -1,18 +1,18 @@
 # book-template
 
-
-
-# build
-```
-$ pip install -U pipenv
-$ pipenv shell
-$ sudo bash ./install-tex.sh
-$ make latexpdfja
-$ cp build/latex/gps-ntp.pdf .
-```
+# build book
 
 ## Docker
 
 ```bash
-docker run -it -v `pwd`:/work -w /work misodengaku/tex make latexpdfja
+$ make pdf
+```
+
+## native
+
+```bash
+$ pipenv install
+$ bash ./install-tex.sh
+
+$ pipenv run make latexpdfja
 ```
