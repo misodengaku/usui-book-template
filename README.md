@@ -1,5 +1,6 @@
 # book-template
 
+
 # build book
 
 ## Docker
@@ -9,10 +10,8 @@ $ make pdf
 ```
 
 ## native
-
 ```bash
-$ pipenv install
-$ bash ./install-tex.sh
-
-$ pipenv run make latexpdfja
+$ sudo sh install-tools.sh
+$ uv sync
+$ uv run make latexpdfja
 ```
