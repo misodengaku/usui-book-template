@@ -1,7 +1,7 @@
 name: Generate PDF
 
 env:
-  FILENAME: CHANGEME.pdf
+  FILENAME: jiho_book.pdf
 
 on:
   push:

@@ -19,9 +19,9 @@ sys.path.insert(0, os.path.abspath('../scripts'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'gps-ntp'
-copyright = u'2019, chibiegg, homelith, misodengaku, notchi'
-author = u'chibiegg, homelith, misodengaku, notchi'
+project = u'jiho_book'
+copyright = u'2026, misodengaku'
+author = u'misodengaku'
 
 # The short X.Y version
 version = u''
@@ -105,7 +105,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'CHANGEME'
+htmlhelp_basename = 'jiho_book'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -140,8 +140,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'CHANGEME.tex', 'CHANGEME タイトル CHANGEME',
-     'author, 著者', 'manual'),
+    (master_doc, 'jiho_book.tex', '時報生成器の本',
+     'misodengaku', 'manual'),
 ]
 
 
@@ -150,7 +150,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'CHANGEME', 'CHANGEME タイトル CHANGEME',
+    (master_doc, 'jiho_book', '時報生成器の本',
      [author], 1)
 ]
 
@@ -161,8 +161,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'CHANGEME', 'CHANGEME タイトル CHANGEME',
-     author, 'CHANGEME', 'One line description of project.',
+    (master_doc, 'jiho_book', '時報生成器の本',
+     author, 'jiho_book', 'One line description of project.',
      'Miscellaneous'),
 ]
 

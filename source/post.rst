@@ -6,6 +6,6 @@
 あとがき
 ===============
 
-Author : 著者名
+Author : misodengaku
 
 TODO: あとがきを書いてください！

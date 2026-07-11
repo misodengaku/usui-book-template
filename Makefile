@@ -12,18 +12,18 @@ help:
 latexpdfja: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-pdf: $(BUILDDIR)/latex/output.pdf
-	cp $(BUILDDIR)/latex/*.pdf output/
+pdf: $(BUILDDIR)/latex/jiho_book.pdf
+	cp $(BUILDDIR)/latex/jiho_book.pdf output/
 
-$(BUILDDIR)/latex/output.pdf: Makefile
+$(BUILDDIR)/latex/jiho_book.pdf: Makefile
 	docker run -e PYTHONIOENCODING=utf-8 -it -v `pwd`:/work -w /work misodengaku/tex:$(SPHINXVER) make latexpdfja
 
-open: $(BUILDDIR)/latex/output.pdf
-	open $(BUILDDIR)/latex/output.pdf
+open: $(BUILDDIR)/latex/jiho_book.pdf
+	open $(BUILDDIR)/latex/jiho_book.pdf
 
 latex: Makefile
-	docker run -e PYTHONIOENCODING=utf-8 -it -v `pwd`:/work -w /work/$(BUILDDIR)/latex misodengaku/tex:$(SPHINXVER) platex -kanji=utf8 -recorder "output.tex"
-	docker run -e PYTHONIOENCODING=utf-8 -it -v `pwd`:/work -w /work/$(BUILDDIR)/latex misodengaku/tex:$(SPHINXVER) dvipdfmx output.dvi
+	docker run -e PYTHONIOENCODING=utf-8 -it -v `pwd`:/work -w /work/$(BUILDDIR)/latex misodengaku/tex:$(SPHINXVER) platex -kanji=utf8 -recorder "jiho_book.tex"
+	docker run -e PYTHONIOENCODING=utf-8 -it -v `pwd`:/work -w /work/$(BUILDDIR)/latex misodengaku/tex:$(SPHINXVER) dvipdfmx jiho_book.dvi
 
 clean:
 	rm -rf $(BUILDDIR)/*
